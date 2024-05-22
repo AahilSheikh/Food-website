@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASED ONLINE FOOD DELIVERY SERVICE IN INDIA | MYONLINEMEAL.COM</title>
+    <link rel="stylesheet" href="css/style.com">
+    <link rel="stylesheet" media="screen and (max-width:1170px)"href="css/phone.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        /* NAVIGATION */
+        #navbar{
+            flex-direction: column;
+        }
+        #navbar ul li a{
+            font-size: 1rem;
+            padding: 0px 7px;
+            padding-bottom: 8px;
+        }
+
+        /* HOME */
+    #home{
+        height: 280px;
+        padding: 3px 68px;
+    }
+    #home::before{
+        height: 380px;
+    }
+    #home p{
+        font-size: 13px;
+    }
+    /* SERVICES */
+    #services{
+        flex-direction: column;
+
+    }
+    /* #services.box{
+
+    } */
+    /* CLIENT SECTION */
+    #clients{
+    flex-wrap: wrap;
+    }
+    #clients img{
+  width: 66px;
+  padding: 66px;
+    }
+    /* CONTACT US SECTION */
+
+    /* FOOTER */
+
+    /* utility classes */
+    .h-primary{
+font-size: 26px;
+    }
+        #navbar {
+            display: flex;
+            align-items: center;
+            position: relative;
+            top: 0px;
+
+        }
+
+        #logo {
+            margin: 10px 34px;
+        }
+
+        #logo img {
+            height: 59px;
+            margin: 3px 6px;
+        }
+
+        #navbar::before {
+            content: "";
+            background-color: black;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        #navbar ul {
+            display: flex;
+            font-family: 'PT Sans', sans-serif;
+        }
+
+        #navbar ul li {
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a {
+            color: white;
+            display: block;
+            padding: 3px 22px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        #navbar ul li a:hover {
+            color: black;
+            background-color: white;
+
+        }
+
+        #HOME {
+            display: flex;
+            flex-direction: column;
+            padding: 3px 200px;
+            height: 550px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #HOME::before {
+            content: "";
+            position: absolute;
+            background: url('https://images.pexels.com/photos/1640774/pexels-photo-1640774.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat center center/cover;
+            height: 650px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.89;
+        }
+
+        #HOME h1 {
+            color: black;
+            text-align: center;
+        }
+
+        p {
+            color: black;
+            text-align: center;
+            font-size: 1.5rem;
+        }
+
+        #services {
+            margin: 34px;
+            display: flex;
+
+        }
+
+        #services .box {
+            border: 2px solid rgb(33, 32, 32);
+            padding: 34px;
+            margin: 25px 6px;
+            border-radius: 23px;
+            background-color: rgb(194, 193, 193);
+            margin-bottom: 20px;
+        }
+
+        #services .box img {
+            height: 160px;
+            margin: auto;
+            display: block;
+        }
+
+        /* #services {}
+
+        #services {} */
+
+        #client-section {
+            position: relative;
+           
+        }
+
+        #client-section::before {
+            content: "";
+            position: absolute;
+            background: url('http://2.bp.blogspot.com/-dV1rgtcLXZ8/Tyb6tHeahsI/AAAAAAAADkM/Y6qVQDuHxac/s1600/Best-top-desktop-food-wallpapers-hd-food-wallpaper-food-pictures-image-photo-1.jpg');
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.8;
+        }
+
+        #CLIENTS {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .client-item {
+            padding: 34px;
+        }
+
+        #CLIENTS img {
+            height: 124px;
+        }
+
+        #contact {
+            position: relative;
+        }
+
+        #contact::before {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.7;
+            background: url('https://c1.wallpaperflare.com/preview/551/930/440/contact-us-contact-call-us-phone-communication.jpg') no-repeat center center/cover;
+        }
+
+        #contact-box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 34px;
+        }
+
+        #contact-box input,
+        #contact-box textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border-radius: 1.1rem;
+            font-size: 1.1rem;
+        }
+
+        #contact-box form {
+            width: 40%;
+
+        }
+
+        #contact-box label {
+            font-size: 1.3rem;
+
+        }
+
+        footer {
+            background-color: black;
+            color: white;
+            padding: 9px 20px;
+        }
+
+        .h-primary {
+            font-size: 3.8rem;
+            padding: 12px;
+        }
+        .btn{
+            font-size: 26px;
+            padding: 4px 8px;
+        }
+
+        .btn {
+            padding: 6px 20px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: brown;
+            color: white;
+            margin: 17px;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .h-secondary {
+            font-size: 2.1rem;
+            padding: 12px;
+        }
+
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+        </div>
+        <img src=https://img.freepik.com/free-photo/fresh-vegetables-frame-with-seeds-letters_23-2148302473.jpg?w=996&t=st=1692596939~exp=1692597539~hmac=4cd4928f5eb6eaf6796183fb629f022ad9c19d4c237d9e81d4dda900d24f025f
+            height="100px" width="180px" alt="">
+        <ul>
+            <li class="item"><a href="#">HOME</a></li>
+            <li class="item"><a href="#">SERVICES</a></li>
+            <li class="item"><a href="#">ABOUT US</a></li>
+            <li class="item"><a href="#">CONTACT US</a></li>
+        </ul>
+    </nav>
+    <section id="HOME">
+        <h1 class="h-primaery">WELCOME TO MY ONLINE MEAL</h1>
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam veritatis ipsum perferendis necessitatibus
+            consequuntur odio nisi, vitae dignissimos animi incidunt. Hic inventore quisquam deserunt eum ducimus odio
+            dolores natus facilis.</P>
+        <button class="btn">ORDER NOW</button>
+    </section>
+    <hr>
+    <section class="services-container">
+        <h1 class="h-primary center">OUR SERVICES</h1>
+        <div id="services">
+            <div class="box">
+                <img src="https://images.pexels.com/photos/248444/pexels-photo-248444.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <h2 class="h-secondary center">FOOD ODERING</h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut molestiae perferendis
+                    sunt, iste veniam quos qui unde cum eligendi perspiciatis maxime labore facere! Similique, sint
+                    pariatur labore maiores aspernatur temporibus.</p>
+            </div>
+            <div class="box">
+                <img src="https://images.pexels.com/photos/1640775/pexels-photo-1640775.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <h2 class="h-secondary center">FOOD CATERING</h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut molestiae perferendis
+                    sunt, iste veniam quos qui unde cum eligendi perspiciatis maxime labore facere! Similique, sint
+                    pariatur labore maiores aspernatur temporibus.</p>
+            </div>
+            <div class="box">
+                <img src="https://images.pexels.com/photos/4604599/pexels-photo-4604599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="">
+                <h2 class="h-secondary center">BULK ODERING</h2>
+                <p class="center">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut molestiae perferendis
+                    sunt, iste veniam quos qui unde cum eligendi perspiciatis maxime labore facere! Similique, sint
+                    pariatur labore maiores aspernatur temporibus.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section id="client-section">
+        <h1 class="h primary center">OUR CLIENTS</h1>
+        <div id="CLIENTS">
+            <div class="client-item">
+                <img src="https://bitcoinist.com/wp-content/uploads/2016/03/Apple_logo_black.svg_.png" alt="OUR CLIENT">
+            </div>
+            <div class="client-item">
+                <img src="https://tse3.mm.bing.net/th?id=OIP.P8ni5_mSQ0hwsw4iqgLd9QHaHa&pid=Api&P=0&h=180"
+                    alt="OUR CLIENT">
+            </div>
+            <div class="client-item">
+                <img src="https://news-cdn.softpedia.com/images/news2/Microsoft-Redesigns-Its-Logo-for-the-First-Time-in-25-Years-Here-It-Is-3.png "
+                    alt="OUR CLIENT">
+            </div>
+            <div class="client-item">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.sY7r-GDwy-pwnK53pBJ6lwHaEK&pid=Api&P=0&h=180"
+                    alt="OUR CLIENT">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h primary center">contact us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">NAME:</label>
+                    <input type="text" name="name" id="name" placeholder="enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="name">e-mail:</label>
+                    <input type="e-mail" name="name" id="e-mail" placeholder="enter your e-mail">
+                </div>
+                <div class="form-group">
+                    <label for="name">PHONE NUMBER:</label>
+                    <input type="phone" name="name" id="phone" placeholder="enter your phone">
+                </div>
+                <div class="form-group">
+                    <label for="name">MESSAGE:</label>
+                    <textarea name="MESSAGE" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            copyright &copy;www.myonline meal.com all right reserved
+        </div>
+    </footer>
+</body>
+
+</html>
